@@ -1,9 +1,9 @@
 #------------------------
 # Header config
-title: Theme Kaze
+title: MogMog.Party
 author: theme-kaze
 # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
-# logo_img: https://img.songhn.com/img/Y67gdd.png
+logo_img: /img/logo.png
 author_img: https://img.songhn.com/img/Y67gdd.png
 author_description: designed by theme-kaze
 #------------------------
@@ -15,7 +15,7 @@ menus:
   tags: /tags
   categories: /categories
   about: /about
-  friends: /links
+  # friends: /links
   # artitalk: /shuoshuo # You can uncomment to add this route
 
 about:
@@ -47,7 +47,7 @@ toc:
   minDepth: 1
 
 copyright:
-  enable: true
+  enable: false
   writer: # if writer is empty we will use config.author as writer
   declare: 本博客所有文章除特别声明外，均采用<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 协议</a>。转载请注明出处！
   style: warning # the style uses note warning | danger | primary | info | success
@@ -187,7 +187,7 @@ prism:
   darkTheme: tomorrow
 # show the number of words in posts
 wordcount:
-  enable: true
+  enable: false
 # Analytics config
 analytics:
   enable: false
@@ -224,8 +224,8 @@ color:
   link-color: "#3273dc"
   link-hover-color: "#6596e5"
   info-text-color: "#60656a"
-  widget-background-color: "#fff"
-  body-background-color: "#f2f5f8"
+  widget-background-color: "#f7f7f7"
+  body-background-color: "#efefef"
   border-color: "#e1e4e9"
   pre-color: "#2d2d2d"
   code-color: "#50687c"
