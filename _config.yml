@@ -1,7 +1,7 @@
 #------------------------
 # Header config
 title: MogMog.Party
-author: theme-kaze
+author: MogMog.Party
 # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
 logo_img: /img/logo.png
 author_img: https://img.songhn.com/img/Y67gdd.png
@@ -69,7 +69,7 @@ og:
 # Footer
 #------------------------
 footer:
-  copyYear: 2020
+  copyYear: 2023
   # if showPoweredBy is ture, 'Powered by Hexo' will be seen on the footer
   showPoweredBy: true
   # if showThemeName is ture, 'Theme - Kaze' will be seen on the footer
@@ -99,7 +99,7 @@ widgets:
 # animation config
 #------------------------
 # if scrollUpAnimation is true, there will be scroll-up animation.
-scrollUpAnimation: true
+scrollUpAnimation: false
 
 #------------------------
 # comment config
@@ -178,7 +178,7 @@ lazyload:
 # plugins config
 #------------------------
 lightbox:
-  enable: true
+  enable: false
 # If your hexo version is below 5.0.0, please upgrade first to use this config
 # we support eight highlight themes, you can go to prism website (https://prismjs.com) for more information
 # theme: default | coy | dark | funky | okaidia | solarizedlight | tomorrow | twilight
@@ -221,8 +221,8 @@ color:
   text-light-color: "#60656a"
   divider-color: "#e6e8ee"
   title-color: "#475b6d"
-  link-color: "#3273dc"
-  link-hover-color: "#6596e5"
+  link-color: "#d32e75"
+  link-hover-color: "#d32e75"
   info-text-color: "#60656a"
   widget-background-color: "#f7f7f7"
   body-background-color: "#efefef"
@@ -230,6 +230,9 @@ color:
   pre-color: "#2d2d2d"
   code-color: "#50687c"
   code-background-color: "#e9eaf0"
+
+  dark-link-color: "#d32e75"
+  dark-link-hover-color: "#d32e75"
 
 font:
   font-size: 15px # global font-size
@@ -256,5 +259,5 @@ cdn:
   artitalk: https://cdn.jsdelivr.net/npm/artitalk
   md5: /js/lib/md5.min.js
 
-left_widget_enabled: false  # or false
-right_widget_enabled: false  # or false
+left_widget_enabled: false # 左サイドバーの表示
+right_widget_enabled: false  # 右サイドバーの表示

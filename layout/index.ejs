@@ -6,21 +6,9 @@
           <%= post.title %>
         </h1>
       </a>
-      <% if(post.thumbnail) { %>
-        <div class="post-image">
-          <img 
-            src="<%= post.thumbnail %>" 
-            alt="<%= post.title %> image" 
-            class="image lozad">
-        </div>
-      <% } %>
-      <div class="card-excerpt">
-        <%= strip_html(post.content) %>
-      </div>
       <div class="card-post-footer">
         <div class="post-meta">
           <time datetime="<%= date_xml(post.date) %>">
-            <i class="iconfont icon-calendar" style="margin-right: 2px;"></i>
             <span><%= date(post.date) %></span>
           </time>
           <% if(post.categories && post.categories.data.length) { %>
@@ -41,8 +29,19 @@
             <% } %>
           <% } %>
         </div>
-        <a href="<%= url_for(post.path) %>"><%- __('readmore.title') %></a>
       </div>
+      <% if(post.thumbnail) { %>
+        <div class="post-image">
+          <img 
+            src="<%= url_for(post.thumbnail) %>" 
+            alt="<%= post.title %> image" 
+            class="image lozad">
+        </div>
+      <% } %>
+      <div class="card-excerpt">
+        <%= strip_html(post.content) %>
+      </div>
+      
     </article>
   </div>
 <% }); %>

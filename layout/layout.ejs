@@ -35,7 +35,7 @@
     </div>
     <%# footer %> 
     <%- partial('_partial/footer.ejs') %> 
-    <%- partial('_partial/scrollbutton.ejs') %> 
+    
     <%# plugins %> 
     <% if(theme.latex.enable) { %> 
       <%- partial('_partial/plugins/latex.ejs') %> 
@@ -94,5 +94,6 @@
         setTimeout(() => {localSearch("<%= theme.search.path || 'search.json' %>")}, 0)
       </script>
     <% } %>
+    <div class="pagetop"><i class="fa-solid fa-angle-up"></i></div>
   </body>
 </html>

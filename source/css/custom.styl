@@ -1,5 +1,5 @@
-body {
-    font-family: 'Josefin Sans', 'ヒラギノ丸ゴ Pron', 'Hiragino Maru Gothic Pron', 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+html, body {
+    font-family: "Sen", 'ヒラギノ丸ゴ Pron', 'Hiragino Maru Gothic Pron', 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
   }
 
 .image-wrapper .image:not(.loaded) {
@@ -37,7 +37,7 @@ body {
 }
 
 .archive-timeline-post-date {
-  font-size: 0.9rem;
+  font-size: 1.0rem;
 
 }
 
@@ -51,4 +51,50 @@ body {
 }
 .archive-timeline-post-item:hover {
   text-decoration: underline;
+}
+
+.card-excerpt,
+.post-title {
+  margin-bottom:.2rem
+}
+.card-post-footer {
+  margin-bottom:.2rem
+}
+.navbar-logo-img {
+  margin-right:5px
+  width:25px;
+}
+
+@media (max-width: 742px) {
+  #dark {
+    display: block; /* または inline など適切な表示スタイル */
+  }
+  #search {
+    display: block; /* または inline など適切な表示スタイル */
+  }
+}
+.pagetop {
+    color: #fff;
+    background-color: rgba(211,46,117,0.3);
+    text-decoration: none;
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 2rem;
+    font-size: 1.2rem;
+    width: 3rem;
+    height: rem;
+    line-height: 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pagetop:hover {
+    color: #fff !important;
+    background-color: #d32e75;
+    text-decoration: none;
+}
+.archive-timeline-tag {
+  background-color:#d32e75;
 }

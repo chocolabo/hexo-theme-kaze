@@ -4,21 +4,27 @@
 </div>
 <div class="archive-timeline">
   <% let archiveYear = ''; %>
-  <% page.posts.forEach(post => { %>
+  <% page.posts.sort('date', -1).forEach(post => { %> <!-- 最新の投稿から表示 -->
     <% if (date(post.date, 'YYYY') != archiveYear) { %>
       <div class="archive-timeline-tag"><span><%= date(post.date, 'YYYY') %></span></div>
       <% archiveYear = date(post.date, 'YYYY'); %>
     <% } %>
     <div class="archive-timeline-item">
       <div class="archive-timeline-post">
-        <div class="card card-content">
-          <div class="archive-timeline-post-date"><%= date(post.date, 'YYYY-MM-DD') %></div>
-          <div class="archive-timeline-post-content">
-            <a 
-              href="<%- url_for(post.path) %>" 
-              class="archive-timeline-post-item">
-              <%= post.title %>
-            </a>
+        <div class="card card-content archive-timeline-post-flex">
+          <div class="archive-timeline-thumbnail">
+            <img src="<%- post.thumbnail ? url_for(post.thumbnail) : url_for('/default-thumbnail.jpg') %>" alt="<%= post.title %>">
+          </div>
+          <div class="archive-timeline-info">
+            <div class="archive-timeline-post-date"><%= date(post.date, 'YYYY-MM-DD') %></div>
+            <div class="archive-timeline-post-content">
+              <a href="<%- url_for(post.path) %>" class="archive-timeline-post-item"><%= post.title %></a>
+              <div class="archive-timeline-categories">
+                <% post.categories.forEach(function(category) { %>
+                  <span class="archive-timeline-category"><a href="<%- url_for(category.path) %>"><%= category.name %></a></span>
+                <% }); %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
