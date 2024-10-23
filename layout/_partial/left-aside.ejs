@@ -1,4 +1,8 @@
 <% if (theme.left_widget_enabled) { %>
+  <%# author card %>
+  <div class="card card-author">
+    <%- partial('_partial/author') %>
+  </div>
   <div class="sticky-tablet">
     <%# display when two columns %>
     <% if(is_post()){ %>
@@ -8,6 +12,7 @@
         </div>
       </article>
     <% } %>
+    
     <%# categories card %>
     <article class="card card-content categories-widget">
       <%- partial('_partial/categories') %>
