@@ -99,7 +99,7 @@ widgets:
 # animation config
 #------------------------
 # if scrollUpAnimation is true, there will be scroll-up animation.
-scrollUpAnimation: false
+scrollUpAnimation: true
 
 #------------------------
 # comment config
