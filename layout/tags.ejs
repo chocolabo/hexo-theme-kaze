@@ -1,9 +1,7 @@
 <%# eslint-disable no-undef %>
 <% page.title = __('tags.title') %>
 <div class="card card-content">
-  <div 
-    class="tags-page-title" 
-    style="margin-bottom: 0.6rem">
+  <div class="tags-page-title" style="margin-bottom: 0.6rem">
     <%= __('tags.title') %>
   </div>
   <div>
@@ -14,10 +12,11 @@
   <div class="tags-card">
     <div class="tags-list">
       <% site.tags.data.sort((a, b) => (a.posts.data.length - b.posts.data.length)).reverse().forEach(function(item){ %>
-        <a 
-          href="<%= url_for(item.path) %>" 
-          title="<%- item.name %>">
-          <div class="tags-list-item"><%= item.name %></div>
+        <a href="<%= url_for(item.path) %>" title="<%- item.name %>">
+          <div class="tags-list-item">
+            <%= item.name %>
+            <span class="tag-count"><%= item.posts.length %></span>
+          </div>
         </a>
       <% }); %>
     </div>
