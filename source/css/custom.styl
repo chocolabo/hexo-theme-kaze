@@ -73,3 +73,21 @@ html, body {
 .archive-timeline-tag {
   background-color:#d32e75;
 }
+.social-links {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom: 10px;
+}
+.social-links .link-item {
+  margin-right: 10px; /* 右側に10pxのスペースを追加 */
+}
+
+/* 最後のアイコンの右側にはスペースを追加しない */
+.social-links .link-item:last-child {
+  margin-right: 0;
+}
+
+.social-links .link-item i {
+  font-size: 1.5em; /* ここでサイズを調整 */
+}

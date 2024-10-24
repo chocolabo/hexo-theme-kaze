@@ -1,6 +1,16 @@
 <footer class="footer">
   <div class="footer-container">
     <div>
+      <% if (theme.social_links && theme.social_links.length > 0) { %>
+        <div class="social-links">
+          <% theme.social_links.forEach(function(link) { %>
+            <a href="<%= link.url %>" title="<%= link.name %>" class="link-item" target="_blank" rel="noopener me">
+              <i class="<%= link.icon_class %>"></i>
+            </a>
+          <% }); %>
+        </div>
+      <% } %>
+
       <div class="footer-dsc">
         <span>
           Copyright ©
@@ -76,4 +86,7 @@
       </div>
       
     <% } %>
+
+
+    
 </footer>
