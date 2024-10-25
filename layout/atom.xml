@@ -1,0 +1,14 @@
+<entry>
+  <title><![CDATA[{{ post.title }}]]></title>
+  <link href="{{ url_for(post.path) }}"/>
+  <id>{{ url_for(post.path) }}</id>
+  <updated>{{ post.updated.toISOString() }}</updated>
+  <content type="html">
+    <![CDATA[
+      {{ post.content | strip_html | truncate:200 }}
+      {% if post.photos and post.photos.length %}
+        <img src="{{ post.photos[0] }}" alt="thumbnail"/>
+      {% endif %}
+    ]]>
+  </content>
+</entry>
