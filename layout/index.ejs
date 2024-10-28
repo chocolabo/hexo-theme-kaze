@@ -1,3 +1,11 @@
+<% 
+// カスタムフィルタ関数を定義
+function stripExceptAnchor(content) {
+  // 正規表現で<a>タグ以外のHTMLタグを削除
+  return content.replace(/<(?!\/?a(?=>|\s.*>))\/?.*?>/g, '');
+}
+%>
+
 <% page.posts.forEach(post => { %>
   <div class="card">
     <article class="card card-content">
@@ -39,7 +47,7 @@
         </div>
       <% } %>
       <div class="card-excerpt">
-        <%= strip_html(post.content) %>
+        <%- stripExceptAnchor(post.content) %>  <!-- カスタムフィルタを適用 -->
       </div>
       
     </article>
