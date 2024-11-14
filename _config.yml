@@ -262,22 +262,22 @@ cdn:
 left_widget_enabled: false # 左サイドバーの表示
 right_widget_enabled: false  # 右サイドバーの表示
 
-social_links:
-  - name: RSS
-    url: /rss2.xml
-    icon_class: fa-solid fa-square-rss
-  - name: Honey.Choco.Ink
-    url: https://honey.choco.ink
-    icon_class: fa-solid fa-book-bookmark  
-  - name: Iceshrimp
-    url: https://milk.choco.ink/@tachibana
-    icon_class: fa-solid fa-rocket
-  - name: Bluesky
-    url: https://bsky.app/profile/sweet.choco.ink
-    icon_class: fa-brands fa-bluesky
-  - name: Caramel.Choco.Ink
-    url: https://caramel.choco.ink
-    icon_class: fa-solid fa-photo-film
-  - name: Citrus.Choso.Ink
-    url: https://citrus.choco.ink
-    icon_class: fa-solid fa-address-card
+# social_links:
+#   - name: RSS
+#     url: /rss2.xml
+#     icon_class: fa-solid fa-square-rss
+#   - name: Honey.Choco.Ink
+#     url: https://honey.choco.ink
+#     icon_class: fa-solid fa-book-bookmark  
+#   - name: Iceshrimp
+#     url: https://milk.choco.ink/@tachibana
+#     icon_class: fa-solid fa-rocket
+#   - name: Bluesky
+#     url: https://bsky.app/profile/sweet.choco.ink
+#     icon_class: fa-brands fa-bluesky
+#   - name: Caramel.Choco.Ink
+#     url: https://caramel.choco.ink
+#     icon_class: fa-solid fa-photo-film
+#   - name: Citrus.Choso.Ink
+#     url: https://citrus.choco.ink
+#     icon_class: fa-solid fa-address-card
