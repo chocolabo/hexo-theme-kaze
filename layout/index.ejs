@@ -32,7 +32,7 @@ function stripExceptAnchor(content) {
                 <% continue %>
               <% } %>
               <a href="<%= url_for(item.path) %>" class="post-meta-link">
-                <%= item.slug %>
+                <%= item.name %> <!-- スラッグからカテゴリ名に変更 -->
               </a>
             <% } %>
           <% } %>
